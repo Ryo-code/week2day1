@@ -1,0 +1,22 @@
+{
+  "name": "week2day1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "download_avatars.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryo-code/week2day1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ryo-code/week2day1/issues"
+  },
+  "homepage": "https://github.com/Ryo-code/week2day1#readme",
+  "dependencies": {
+    "request": "^2.75.0"
+  }
+}

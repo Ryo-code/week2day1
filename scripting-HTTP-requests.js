@@ -8,10 +8,10 @@ function readHTML(url, callback) {
     path: urlObject.path
   };
 
-  http.get(requestOptions, (response) => {    // HTTP Response Callback
+  http.get(requestOptions, (response) => { // HTTP Response Callback
     var page = '';
-    response.setEncoding("utf8");             // Use UTF-8 encoding
-    response.on("data", function(data) {           // On Data Received
+    response.setEncoding("utf8");     // Use UTF-8 encoding
+    response.on("data", function(data) {    // On Data Received
       console.log("Chunk Received. Length:", data.length);
       page += data;
     });
