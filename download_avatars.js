@@ -17,11 +17,10 @@ function getRepoContributors(repoOwner, repoName, cb){
 
   request(options, function (error, response, body) { //<-accessing the API
     if (!error && response.statusCode == 200) {
-      console.log('here')
-      var data = JSON.parse(body); //<- retrieve JSON data, which is parsed into
-      // console.log(data);
+      var data = JSON.parse(body);
+//this retrieves JSON data, which is then parsed into a JS array of objects
       cb(data);
-  } else {                 // an JavaScript array of objects
+  } else {
     console.log("NNNNNOPE!")
     }
   });
@@ -43,7 +42,7 @@ getRepoContributors(owner, repo, (contributors, err) => {
     console.log(err, "Awful. Just awful...");
     // return;
   }
-  console.log('Way to go hombre!')
+  console.log('Way to go hombre!');
 
   contributors.forEach((contributor)=>{
     var avatarURL = contributor["avatar_url"];
